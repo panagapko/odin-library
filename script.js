@@ -45,17 +45,17 @@ function renderLibrary() {
         pagesCell.textContent = book.pages
 
         const readCell = row.insertCell()
-        readCell.textContent = book.read ? "✅" : "🚫"
+        readCell.textContent = book.read ? "✅" : "❌"
 
         const toolsCell = row.insertCell()
 
         const btnRead = document.createElement("button")
-        btnRead.textContent = "👓"
-        btnRead.className = "btn btn-secondary btn-sm read-button"
+        btnRead.textContent = "R"
+        btnRead.className = "btn btn-secondary btn-sm read-button m-1"
         
         const btnDelete = document.createElement("button")
         btnDelete.textContent = "X"
-        btnDelete.className = "btn btn-danger btn-sm delete-button mx-2"
+        btnDelete.className = "btn btn-danger btn-sm delete-button m-1"
         
         toolsCell.className = "text-end"
         toolsCell.style.width = "50px"
